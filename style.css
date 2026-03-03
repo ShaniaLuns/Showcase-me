@@ -72,28 +72,7 @@ section {
   max-width: 800px;
   margin: auto;
 }
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 40px auto;
-}
 
-.feature-box {
-    background: #333; /* Dark grey */
-    color: #fff; /* White text for readability */
-    padding: 15px; /* Smaller padding = smaller box */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-    font-size: 0.95em; /* Slightly smaller text to fit smaller boxes */
-}
-
-.feature-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 .pricing-section {
   text-align: center;
@@ -149,6 +128,28 @@ section {
 .pricing-card.featured {
   border: 2px solid #222;
 }
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* smaller width */
+    gap: 15px; /* smaller gap */
+    max-width: 900px; /* optional, fits smaller boxes better */
+    margin: 40px auto;
+}
+
+.feature-box {
+    background: #333; /* Dark grey */
+    color: #fff; /* White text for readability */
+    padding: 15px; /* Smaller padding = smaller box */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    font-size: 0.95em; /* Slightly smaller text to fit smaller boxes */
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 footer {
   background: #1f1f1f;
   color: white;
